@@ -1,0 +1,27 @@
+<!DOCTYPE >
+
+<html ng-app="app">
+	
+	<head>
+				<meta charset="UTF-8" />
+		<script src="js/angular.min.js"></script>
+		<script src="app/app.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css" />
+		
+	</head>
+	
+	
+	<body>
+		<nav ng-controller="list" class="navbar navbar-light bg-faded">
+		<ul class="nav navbar-nav">
+				<li ng-repeat="c in categories" class="nav-item">
+					<a class="nav-link" href="{{c.path}}">{{c.name}}</a>
+				</li>	
+	     </ul>
+	     </nav>
+		
+	</body>
+	
+</html>

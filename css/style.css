@@ -1,0 +1,45 @@
+
+
+
+.menu {
+	
+	list-style-type: none;
+	
+}
+.navbar-nav .nav-item{
+	
+	float:right;
+	    margin-right: 60px;
+}
+
+
+ div .title{
+	text-align: center;
+}
+.imgsAct{
+	
+	float: right;
+}
+.imgsAct img{
+	width: 150px;
+	    height: 200px;
+	        margin-right: 27px;
+}
+
+.imgsAct a{
+	text-align: center;
+	color: black ;
+	display: block;
+}
+.imgsAct img:active{
+	
+	border: 3px solid red;
+}
+.form-control{
+	    margin-bottom: 30px;
+}
+
+.btn{
+	    display: block !important;
+    margin-bottom: 15px;
+}

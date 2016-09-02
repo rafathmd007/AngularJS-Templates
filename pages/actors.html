@@ -1,0 +1,34 @@
+<!DOCTYPE >
+
+
+<html ng-app="app">
+	
+	
+	<head>
+	
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="../js/angular.min.js"></script>
+		<script src="../app/app.js"></script>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+
+	</head>
+	
+	<body>
+		
+		<div>
+			<h2 class="title">שחקנים</h2>
+		</div>
+		<div ng-controller="ctrlImg">
+			
+			<input type="text" ng-model="search" class="form-control" placeholder="Actor Name">
+		<button class="btn" ng-click="sort('up')">up</button> <button class="btn" ng-click="sort('down')">down</button>
+			<div ng-repeat="i in NewListOfActor | filter:{name:search} | orderBy:upDown" class="imgsAct">
+				<img src="{{imageFolder}}{{i.pic}}">
+				<a href="{{i.path}}">{{i.name}}</a>
+				 
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
